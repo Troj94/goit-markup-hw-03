@@ -1,0 +1,241 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    width: 1600px;
+}
+
+/* Шапка */
+
+.header {
+    display: flex;
+
+    letter-spacing: 0.02em;
+}
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+
+    display: inline-block;
+    margin: 24px 93px 25px 215px;
+
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 31px;
+}
+
+.text-logo {
+    color: var(--blue-text);
+}
+
+.navigation-list {
+    display: flex;
+    justify-content: space-between;
+    width: 294px;
+
+    margin: 32px 331px 32px 0;
+}
+
+.navigation-list a {
+    font-weight: 500;
+    color: var(--common-black-text);
+}
+
+.active a {
+    color: var(--blue-text);
+}
+
+.navigation-list :hover,
+.navigation-list :focus,
+.header-contacts :hover,
+.header-contacts :focus {
+    color: var(--blue-text);
+}
+
+.header-contacts {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.email {
+    box-sizing: border-box;
+    width: 135px;
+    margin-right: 50px;
+}
+
+.tel {
+    box-sizing: border-box;
+    width: 122px;
+    margin-right: 215px;
+}
+
+.contacts-text {
+    color: var(--grey-text);
+    font-size: 14px;
+
+}
+
+/* Герой */
+
+.hero {
+    height: 600px;
+    background-color: rgba(47, 48, 58, 1);
+}
+
+.hero-title {
+    margin: 0;
+    padding: 200px 452px 30px;
+
+    color: var(--white-text);
+
+    text-align: center;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.hero-button {
+
+    box-sizing: content-box;
+    height: 50px;
+    width: 200px;
+
+    text-align: center;
+
+    margin: 0 700px 200px;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    background-color: var(--blue-text);
+    color: var(--white-text);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+}
+
+/* Преимущества и примеры */
+
+.advantages-title {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.advantages-info {
+    color: var(--grey-text);
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+}
+
+/* Чем мы занимаемся */
+
+.galery {
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+/* Наша команда */
+
+.team {
+    background-color: rgba(245, 244, 250, 1);
+}
+
+.team-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+}
+
+.team-proffesion {
+    color: var(--grey-text);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+}
+
+/* Подвал */
+
+.footer {
+    background-color: rgba(47, 48, 58, 1);
+}
+
+.footer-logo {
+    font-family: 'Raleway', sans-serif;
+    color: var(--white-text);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 31px;
+}
+
+.footer-address {
+    color: var(--white-text);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.footer-contacts {
+    color: var(--grey-address-text);
+}
+
+.footer-contacts :hover,
+.footer-contacts :focus {
+    color: var(--blue-text);
+}
+
+/* Портфолио */
+
+.projects-title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+}
+
+.projects-info {
+    color: var(--grey-text);
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+}
+
+.button {
+    background-color: var(--blue-text);
+    color: var(--white-text);
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+}
+
+.button-projects {
+    background-color: rgba(245, 244, 250, 1);
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+}
+
+.button-projects:hover,
+.button-projects:focus {
+    color: var(--white-text);
+    background-color: var(--blue-text);
+}
