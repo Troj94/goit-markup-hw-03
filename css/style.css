@@ -3,10 +3,18 @@ body {
     width: 1600px;
 }
 
+.container {
+    width: 1170px;
+    padding: 0 15px 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 /* Шапка */
 
 .header {
     display: flex;
+
 
     letter-spacing: 0.02em;
 }
@@ -14,8 +22,11 @@ body {
 .logo {
     font-family: 'Raleway', sans-serif;
 
+    width: 145px;
+    height: 31px;
+
     display: inline-block;
-    margin: 24px 93px 25px 215px;
+    margin: 24px 93px 25px 200px;
 
     color: #000;
     text-decoration: none;
@@ -28,12 +39,19 @@ body {
     color: var(--blue-text);
 }
 
+.navigation {
+    width: 294px;
+    height: 16px;
+    margin: 32px 331px 32px 0;
+
+}
+
 .navigation-list {
     display: flex;
     justify-content: space-between;
     width: 294px;
 
-    margin: 32px 331px 32px 0;
+    margin: 0;
 }
 
 .navigation-list a {
@@ -53,6 +71,8 @@ body {
 }
 
 .header-contacts {
+
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
 
@@ -60,16 +80,24 @@ body {
     margin-bottom: 32px;
 }
 
-.email {
-    box-sizing: border-box;
+.header-list {
+    display: inline-block;
     width: 135px;
+    height: 16px;
+    margin-right: 50px;
+}
+
+.email {
+    width: 135px;
+    height: 16px;
     margin-right: 50px;
 }
 
 .tel {
-    box-sizing: border-box;
+    text-align: center;
     width: 122px;
-    margin-right: 215px;
+    height: 16px;
+    margin-right: 200px;
 }
 
 .contacts-text {
@@ -100,7 +128,6 @@ body {
 }
 
 .hero-button {
-
     box-sizing: content-box;
     height: 50px;
     width: 200px;
@@ -123,7 +150,29 @@ body {
 
 /* Преимущества и примеры */
 
+.advantages {
+    display: flex;
+
+    height: 101px;
+
+    margin-top: 94px;
+    margin-bottom: 94px;
+}
+
+.advantages-card {
+    width: 270px;
+    height: 101px;
+
+    margin-right: 30px;
+}
+
+.advantages-card:nth-last-child(1) {
+    margin-right: 0px;
+}
+
 .advantages-title {
+    margin: 0;
+
     font-weight: bold;
     font-size: 14px;
     line-height: 16px;
@@ -132,6 +181,9 @@ body {
 }
 
 .advantages-info {
+    margin-top: 10px;
+    margin-bottom: 0;
+
     color: var(--grey-text);
     font-weight: normal;
     font-size: 14px;
@@ -141,20 +193,70 @@ body {
 
 /* Чем мы занимаемся */
 
-.galery {
+.gallery {
+    margin: 0 auto 50px;
+
     font-size: 36px;
     line-height: 42px;
     text-align: center;
     letter-spacing: 0.03em;
 }
 
+.gallery-list {
+    display: flex;
+
+    margin-bottom: 0;
+}
+
+.gallery-item {
+    margin-right: 30px;
+}
+
+.gallery-item:nth-last-child(1) {
+    margin-right: 0px;
+}
+
 /* Наша команда */
 
 .team {
     background-color: rgba(245, 244, 250, 1);
+    margin-top: 94px;
+}
+
+.gallery-team {
+    padding-top: 94px;
+    padding-bottom: 50px;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.team-list {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.team-card {
+    margin-right: 30px;
+    width: 270px;
+    height: 368px;
+}
+
+.team-card:nth-last-child(1) {
+    margin-right: 0;
 }
 
 .team-title {
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+    text-align: center;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
@@ -162,7 +264,13 @@ body {
 }
 
 .team-proffesion {
+    margin-top: 0;
+    margin-bottom: 30px;
+
     color: var(--grey-text);
+
+    text-align: center;
+
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
@@ -172,11 +280,18 @@ body {
 /* Подвал */
 
 .footer {
+    margin-top: 0;
+
+    height: 252px;
+
     background-color: rgba(47, 48, 58, 1);
 }
 
 .footer-logo {
     font-family: 'Raleway', sans-serif;
+    display: block;
+    padding-top: 60px;
+
     color: var(--white-text);
     text-decoration: none;
     font-weight: bold;
@@ -185,6 +300,7 @@ body {
 }
 
 .footer-address {
+
     color: var(--white-text);
     font-style: normal;
     font-weight: normal;
@@ -192,13 +308,21 @@ body {
     line-height: 24px;
 }
 
-.footer-contacts {
-    color: var(--grey-address-text);
+.footer-list a:hover,
+.footer-list a:focus {
+    color: var(--blue-text);
 }
 
-.footer-contacts :hover,
-.footer-contacts :focus {
-    color: var(--blue-text);
+.footer-list {
+    width: 231px;
+    height: 81px;
+
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.footer-contacts {
+    color: var(--grey-address-text);
 }
 
 /* Портфолио */

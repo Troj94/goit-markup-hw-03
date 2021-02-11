@@ -16,29 +16,33 @@
 
   <body>
     <!--Шапка-->
-    <header class="header">
+    <header class="header containe">
+      <!--умышленная ошибка в названии класса-->
       <a class="logo" href="./index.html"
         ><span class="text-logo">Web</span>Studio</a
       >
       <nav class="navigation">
         <ul class="navigation-list">
-          <li><a href="./index.html">Студия</a></li>
-          <li class="active"><a href="./portfolio.html">Портфолио</a></li>
+          <li class="active"><a href="./index.html">Студия</a></li>
+          <li>
+            <a href="./portfolio.html">Портфолио</a>
+          </li>
           <li><a href="#">Контакты</a></li>
         </ul>
       </nav>
 
-      <p class="header-contacts email">
+      <!-- <p class="header-contacts email">
         <a class="contacts-text" href="mailto:info@devstudio.com"
           >info@devstudio.com</a
         >
       </p>
       <p class="header-contacts tel">
         <a class="contacts-text" href="tel:+380961111111">+38 096 111 11 11</a>
-      </p>
+      </p> -->
 
-      <!-- <ul class="header-contacts">
-        <li>
+      <!-- <div class="navigation-contacts"> -->
+      <ul class="header-contacts">
+        <li class="header-list">
           <a class="contacts-text" href="mailto:info@devstudio.com"
             >info@devstudio.com</a
           >
@@ -48,11 +52,12 @@
             >+38 096 111 11 11</a
           >
         </li>
-      </ul> -->
+      </ul>
+      <!-- </div> -->
     </header>
 
     <!--Фильтр-->
-    <main>
+    <main class="container">
       <nav>
         <h1 hidden>Проекты</h1>
         <ul>
@@ -113,13 +118,13 @@
     </main>
 
     <!--Подвал-->
-    <footer class="footer">
+    <footer class="footer container">
       <a class="footer-logo" href="./index.html"
         ><span class="text-logo">Web</span>Studio</a
       >
       <address class="footer-address">
-        <p>г. Киев, пр-т Леси Украинки, 26</p>
-        <ul class="header-contacts">
+        <ul class="footer-list">
+          <li>г. Киев, пр-т Леси Украинки, 26</li>
           <li>
             <a class="footer-contacts" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
