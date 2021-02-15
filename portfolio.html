@@ -16,7 +16,7 @@
 
   <body>
     <!--Шапка-->
-    <header class="header containe">
+    <header class="header container">
       <!--умышленная ошибка в названии класса-->
       <a class="logo" href="./index.html"
         ><span class="text-logo">Web</span>Studio</a
@@ -31,16 +31,6 @@
         </ul>
       </nav>
 
-      <!-- <p class="header-contacts email">
-        <a class="contacts-text" href="mailto:info@devstudio.com"
-          >info@devstudio.com</a
-        >
-      </p>
-      <p class="header-contacts tel">
-        <a class="contacts-text" href="tel:+380961111111">+38 096 111 11 11</a>
-      </p> -->
-
-      <!-- <div class="navigation-contacts"> -->
       <ul class="header-contacts">
         <li class="header-list">
           <a class="contacts-text" href="mailto:info@devstudio.com"
@@ -53,7 +43,6 @@
           >
         </li>
       </ul>
-      <!-- </div> -->
     </header>
 
     <!--Фильтр-->
@@ -61,15 +50,19 @@
       <nav>
         <h1 hidden>Проекты</h1>
         <ul class="projects-filter">
-          <li><button class="button-projects">Все</button></li>
-          <li>
+          <li class="projects-list">
+            <button class="button-projects">Все</button>
+          </li>
+          <li class="projects-list">
             <button class="button-projects">Веб-сайты</button>
           </li>
-          <li>
+          <li class="projects-list">
             <button class="button-projects">Приложения</button>
           </li>
-          <li><button class="button-projects">Дизайн</button></li>
-          <li>
+          <li class="projects-list">
+            <button class="button-projects">Дизайн</button>
+          </li>
+          <li class="projects-list">
             <button class="button-projects">Маркетинг</button>
           </li>
         </ul>
