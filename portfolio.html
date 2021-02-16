@@ -16,110 +16,136 @@
 
   <body>
     <!--Шапка-->
-    <header class="header container">
-      <!--умышленная ошибка в названии класса-->
-      <a class="logo" href="./index.html"
-        ><span class="text-logo">Web</span>Studio</a
-      >
-      <nav class="navigation">
-        <ul class="navigation-list">
-          <li><a href="./index.html">Студия</a></li>
-          <li class="active">
-            <a href="./portfolio.html">Портфолио</a>
-          </li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-      </nav>
+    <header class="header">
+      <div class="container">
+        <a class="logo" href="./index.html"
+          ><span class="text-logo">Web</span>Studio</a
+        >
+        <nav class="navigation">
+          <ul class="navigation-list">
+            <li class="active">
+              <a class="link-block" href="./index.html">Студия</a>
+            </li>
+            <li>
+              <a class="link-block" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li><a class="link-block" href="#">Контакты</a></li>
+          </ul>
+        </nav>
 
-      <ul class="header-contacts">
-        <li class="header-list">
-          <a class="contacts-text" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li>
-          <a class="contacts-text" href="tel:+380961111111"
-            >+38 096 111 11 11</a
-          >
-        </li>
-      </ul>
+        <ul class="header-contacts">
+          <li class="header-list">
+            <a class="contacts-text" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="header-list">
+            <a class="contacts-text" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
     </header>
 
     <!--Фильтр-->
-    <main class="container">
-      <nav>
-        <h1 hidden>Проекты</h1>
-        <ul class="projects-filter">
-          <li class="projects-list">
-            <button class="button-projects">Все</button>
-          </li>
-          <li class="projects-list">
-            <button class="button-projects">Веб-сайты</button>
-          </li>
-          <li class="projects-list">
-            <button class="button-projects">Приложения</button>
-          </li>
-          <li class="projects-list">
-            <button class="button-projects">Дизайн</button>
-          </li>
-          <li class="projects-list">
-            <button class="button-projects">Маркетинг</button>
-          </li>
-        </ul>
-      </nav>
+    <main>
+      <section>
+        <div class="container-proj">
+          <h1 hidden>Проекты</h1>
+          <ul class="projects-filter">
+            <li class="projects-list">
+              <button class="button-projects">Все</button>
+            </li>
+            <li class="projects-list">
+              <button class="button-projects">Веб-сайты</button>
+            </li>
+            <li class="projects-list">
+              <button class="button-projects">Приложения</button>
+            </li>
+            <li class="projects-list">
+              <button class="button-projects">Дизайн</button>
+            </li>
+            <li class="projects-list">
+              <button class="button-projects">Маркетинг</button>
+            </li>
+          </ul>
 
-      <ul class="projects">
-        <li class="projects-item">
-          <img src="./img/technokrack.jpg" alt="Веб-сайт Технокряк" />
-          <h2 class="projects-title">Технокряк</h2>
-          <p class="projects-info">Веб-сайт</p>
-        </li>
-        <li class="projects-item">
-          <img src="./img/basketball.jpg" alt="Постер баскетбольных команд" />
-          <h2 class="projects-title">Постер New Orlean vs Golden Star</h2>
-          <p class="projects-info">Дизайн</p>
-        </li>
-        <li class="projects-item">
-          <img src="./img/seafood.jpg" alt="Логотип ресторана Seafood" />
-          <h2 class="projects-title">Ресторан Seafood</h2>
-          <p class="projects-info">Приложение</p>
-        </li>
-        <li class="projects-item">
-          <img src="./img/headphones.jpg" alt="Наушники" />
-          <h2 class="projects-title">Проект Prime</h2>
-          <p class="projects-info">Маркетинг</p>
-        </li>
-        <li class="projects-item">
-          <img src="./img/boxes.jpg" alt="Коробки" />
-          <h2 class="projects-title">Проект Boxes</h2>
-          <p class="projects-info">Приложение</p>
-        </li>
-        <li class="projects-item">
-          <img src="./img/screen.jpg" alt="Монитор" />
-          <h2 class="projects-title">Inspiration has no Borders</h2>
-          <p class="projects-info">Веб-сайт</p>
-        </li>
-        <li class="projects-item">
-          <img src="./img/book.jpg" alt="Открытая книга" />
-          <h2 class="projects-title">Издание Limited Edition</h2>
-          <p class="projects-info">Дизайн</p>
-        </li>
-        <li class="projects-item">
-          <img src="./img/labeltag.jpg" alt="Бирка с надписью labeltag" />
-          <h2 class="projects-title">Проект LAB</h2>
-          <p class="projects-info">Маркетинг</p>
-        </li>
-        <li class="projects-item">
-          <img src="./img/notebook.jpg" alt="Ноутбук" />
-          <h2 class="projects-title">Growing Business</h2>
-          <p class="projects-info">Приложение</p>
-        </li>
-      </ul>
+          <ul class="projects">
+            <li class="projects-item">
+              <img src="./img/technokrack.jpg" alt="Веб-сайт Технокряк" />
+              <div class="proj-text-card">
+                <h2 class="projects-title">Технокряк</h2>
+                <p class="projects-info">Веб-сайт</p>
+              </div>
+            </li>
+            <li class="projects-item">
+              <img
+                src="./img/basketball.jpg"
+                alt="Постер баскетбольных команд"
+              />
+              <div class="proj-text-card">
+                <h2 class="projects-title">Постер New Orlean vs Golden Star</h2>
+                <p class="projects-info">Дизайн</p>
+              </div>
+            </li>
+            <li class="projects-item">
+              <img src="./img/seafood.jpg" alt="Логотип ресторана Seafood" />
+              <div class="proj-text-card">
+                <h2 class="projects-title">Ресторан Seafood</h2>
+                <p class="projects-info">Приложение</p>
+              </div>
+            </li>
+            <li class="projects-item">
+              <img src="./img/headphones.jpg" alt="Наушники" />
+              <div class="proj-text-card">
+                <h2 class="projects-title">Проект Prime</h2>
+                <p class="projects-info">Маркетинг</p>
+              </div>
+            </li>
+            <li class="projects-item">
+              <img src="./img/boxes.jpg" alt="Коробки" />
+              <div class="proj-text-card">
+                <h2 class="projects-title">Проект Boxes</h2>
+                <p class="projects-info">Приложение</p>
+              </div>
+            </li>
+            <li class="projects-item">
+              <img src="./img/screen.jpg" alt="Монитор" />
+              <div class="proj-text-card">
+                <h2 class="projects-title">Inspiration has no Borders</h2>
+                <p class="projects-info">Веб-сайт</p>
+              </div>
+            </li>
+            <li class="projects-item">
+              <img src="./img/book.jpg" alt="Открытая книга" />
+              <div class="proj-text-card">
+                <h2 class="projects-title">Издание Limited Edition</h2>
+                <p class="projects-info">Дизайн</p>
+              </div>
+            </li>
+            <li class="projects-item">
+              <img src="./img/labeltag.jpg" alt="Бирка с надписью labeltag" />
+              <div class="proj-text-card">
+                <h2 class="projects-title">Проект LAB</h2>
+                <p class="projects-info">Маркетинг</p>
+              </div>
+            </li>
+            <li class="projects-item">
+              <img src="./img/notebook.jpg" alt="Ноутбук" />
+              <div class="proj-text-card">
+                <h2 class="projects-title">Growing Business</h2>
+                <p class="projects-info">Приложение</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
 
     <!--Подвал-->
     <footer class="footer">
-      <div class="container">
+      <div class="container-footer">
         <a class="footer-logo" href="./index.html"
           ><span class="text-logo">Web</span>Studio</a
         >
