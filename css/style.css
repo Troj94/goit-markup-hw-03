@@ -3,8 +3,6 @@ body {
 }
 
 .container {
-
-    /* box-sizing: border-box; */
     width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
@@ -49,8 +47,6 @@ body {
 }
 
 .navigation {
-
-    /* padding: 32px 331px 32px 0; */
     display: flex;
 
 }
@@ -70,6 +66,14 @@ body {
 
 .active a {
     color: var(--blue-text);
+
+}
+
+.navigation span:hover,
+.navigation span:focus {
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    color: #000;
+
 }
 
 .navigation-list :hover,
@@ -81,9 +85,6 @@ body {
 
 .header-contacts {
     display: flex;
-
-    /* padding-top: 32px;
-    padding-bottom: 32px; */
 
     margin: 0;
 }
@@ -115,10 +116,9 @@ body {
 /* Герой */
 
 .hero {
-    height: 600px;
-
     margin: 0 auto;
-    padding: 200px 452px 0 452px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-color: rgba(47, 48, 58, 1);
 }
 
@@ -155,14 +155,15 @@ body {
 
 /* Преимущества и примеры */
 
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .advantages {
     display: flex;
 
     margin: 0 auto;
-
-    padding-top: 94px;
-    padding-bottom: 94px;
-
 }
 
 .advantages-card {
@@ -199,6 +200,10 @@ body {
 
 /* Чем мы занимаемся */
 
+.gall{
+    padding-top: 0;
+}
+
 .gallery {
     margin: 0 auto 50px;
 
@@ -215,11 +220,9 @@ body {
     display: flex;
 
     margin: 0 auto;
-    padding-bottom: 94px;
 }
 
 .gallery-item {
-
     margin-right: 30px;
     margin-bottom: 0;
 }
@@ -243,8 +246,6 @@ body {
 }
 
 .gallery-team {
-    padding-top: 94px;
-
     text-align: center;
     margin-top: 0;
     margin-bottom: 50px;
@@ -259,7 +260,6 @@ body {
     display: flex;
     margin-top: 0;
     margin-bottom: 0;
-    padding-bottom: 94px;
 }
 
 .team-card {
@@ -340,7 +340,6 @@ body {
 }
 
 .footer-address {
-
     display: block;
     color: var(--white-text);
     font-style: normal;
@@ -368,11 +367,13 @@ body {
 
 /* Портфолио */
 
+.main {
+    padding-bottom: 0;
+}
+
 .projects-filter {
     display: flex;
     justify-content: center;
-
-    padding-top: 94px;
 
     margin: 0 auto 34px;
 }
