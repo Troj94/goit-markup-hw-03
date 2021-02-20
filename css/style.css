@@ -314,6 +314,9 @@ body {
     margin: 0 auto;
 
     background-color: rgba(47, 48, 58, 1);
+
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .container-footer {
@@ -329,7 +332,6 @@ body {
 .footer-logo {
     font-family: 'Raleway', sans-serif;
     display: block;
-    padding-top: 60px;
 
     color: var(--white-text);
     text-decoration: none;
@@ -355,10 +357,9 @@ body {
 
 .footer-list {
     width: 231px;
-    height: 81px;
 
     margin-top: 20px;
-    margin-bottom: 60px;
+    margin-bottom: 0;
 }
 
 .footer-contacts {
@@ -367,15 +368,11 @@ body {
 
 /* Портфолио */
 
-.main {
-    padding-bottom: 0;
-}
-
 .projects-filter {
     display: flex;
     justify-content: center;
 
-    margin: 0 auto 34px;
+    margin: 0 auto 50px;
 }
 
 .projects-list {
@@ -401,7 +398,6 @@ body {
     flex-wrap: wrap;
 
     margin: 0 auto;
-    padding-bottom: 94px;
 
     justify-content: space-between;
     align-content: space-between;
